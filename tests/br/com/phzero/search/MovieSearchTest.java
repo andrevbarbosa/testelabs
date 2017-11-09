@@ -104,8 +104,8 @@ public class MovieSearchTest {
 	@Test
 	public void indexar_DataDirectoryExist_ShouldReturnIndice() throws Exception {
 		String[] dataList = new String[]{"little-manhattan.txt", "little-red-monkey.txt"};
-		String linha1 = "little manhattan 2005 josh hutcherson charlie ray bradley whitford mark levin jennifer flackett gavin polone anderson";
-		String linha2 = "little red monkey 1955 richard conte rona anderson russell napier ken hughes james eastwood ken hughes";
+		String linha1 = "little manhattan 2005 josh hutcherson charlie ray bradley whitford mark levin jennifer flackett gavin polone aNDerson";
+		String linha2 = "little red monkey 1955 richard conte rona andersON russell napier ken hughes james eastwood ken hughes";
 		
 		when(data.isDirectory()).thenReturn(true);
 		when(data.list()).thenReturn(dataList);
